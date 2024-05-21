@@ -1,0 +1,105 @@
+<div class="principal"><div class="register">
+  <div class="custom-form">
+    <form method="post">
+      <h1>Registro de Candidatos</h1>
+      <div class="consulta">
+        <input type="text" [(ngModel)]="cedula" name="cedCiudadano" placeholder="cedCiudadano" required="required" />
+        <button type="submit" (click)="consultar(cedula)">Buscar cedula</button>
+      </div>
+    </form>
+    <div  *ngIf="existe===false">
+      <label>
+        El Candidato No Se Encuentra Registrado
+      </label>
+    </div>
+    <form *ngIf="existe" [formGroup]="candidatoForm">
+      <div>
+        <label>
+          Nombre
+        </label>
+        <input formControlName="nombres" type="text">
+      </div>
+      <div>
+        <label>
+          Apellido
+        </label>
+        <input formControlName="apellidos" type="text">
+      </div>
+      <div>
+        <label>
+          municipio de nacimiento
+        </label>
+        <input formControlName="municipionacimiento" type="text">
+      </div>
+      <div>
+        <label>
+          fecha de nacimiento
+        </label>
+        <input formControlName="fechanacimiento" type="text">
+      </div>
+      <div>
+        <label>
+          pais
+        </label>
+        <input formControlName="pais" type="text">
+      </div>
+      <div>
+        <label>
+          departamento de residencia
+        </label>
+        <input formControlName="departamentoresidencia" type="text">
+      </div>
+      <div>
+        <label>
+          municipio de residencia
+        </label>
+        <input formControlName="municipioresidencia" type="text">
+      </div>
+      <div>
+        <label>
+          lugar de votacion
+        </label>
+        <input formControlName="lugarvotacion" type="text">
+      </div>
+      <div>
+        <label>
+          correo
+        </label>
+        <input formControlName="correo" type="text">
+      </div>
+      <div>
+        <label>
+          telefono
+        </label>
+        <input formControlName="phone" type="text">
+      </div>
+       </form>
+    <form *ngIf="existe" [formGroup]="candidatoForm2" method="post">
+      <div>
+        <label>
+        Cedula
+        </label>
+        <input formControlName="cedCiudadano" type="text">
+      </div>
+      <div>
+        <label>
+        Slogan
+        </label>
+        <input formControlName="slogan" type="text">
+      </div>
+      <div>
+        <label>
+          Partido Politico
+        </label>
+        <input formControlName="partidoPolitico" type="text">
+      </div>
+      <div>
+        <label>
+          Propuesta
+        </label>
+        <input formControlName="propuesta" type="text">
+      </div>
+      <button type="submit" [disabled]="candidatoForm.invalid" (click)="register()">Registrar</button>
+    </form>
+  </div>
+</div></div>

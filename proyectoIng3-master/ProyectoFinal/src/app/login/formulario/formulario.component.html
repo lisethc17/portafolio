@@ -1,0 +1,21 @@
+<div class="login">
+  <form class="custom-form" [formGroup]="usuarioForm" method="post">
+    <h1>Inicia Sesión</h1>
+    <input
+      type="email"
+      formControlName="correo"
+      placeholder="Email"
+      required="required"
+    />
+    <input
+      type="password"
+      formControlName="pass"
+      placeholder="Contraseña"
+      required="required"
+    />
+    <button  type="submit" (click)="login()">Iniciar Sesión</button>
+
+    <a routerLink="../recuperarContraseña">Recuperar constraseña</a>
+
+  </form>
+</div>

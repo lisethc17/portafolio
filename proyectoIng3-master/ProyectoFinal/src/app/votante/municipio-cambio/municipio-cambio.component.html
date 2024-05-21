@@ -1,0 +1,30 @@
+<div class="perfil">
+  <form class="custom-form" method="post">
+    <div class="titulo">
+      <h1>Perfil de {{nombrePerfil}}</h1>
+    </div>
+    <div class="contienePartes">
+      <div class="parte">
+        <label for="cedula">Cedula</label>
+        <input type="text" name="cedula" editable="false" [(ngModel)]="cedula" required="required" readonly />
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" [(ngModel)]="nombre" required="required" readonly />
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" [(ngModel)]="apellido" required="required" readonly />
+      </div>
+      <div class="parte">
+        <label for="fechaExp">Fecha de expedición del documento</label>
+        <input type="text" name="fechaExp" [(ngModel)]="fechaExp" required="required" readonly />
+        <label for="municipioNac">Municipio de nacimiento</label>
+        <input type="text" name="municipioNac" [(ngModel)]="municipioNac" required="required" readonly />
+        <label for="fechaNac">Fecha de nacimiento</label>
+        <input type="text" name="fechaNac" [(ngModel)]="fechaNac" required="required" readonly />
+        <label for="municipioRes">Municipio de residencia</label>
+        <input autofocus type="text" name="municipioRes" [(ngModel)]="municipioRes" required="required" />
+      </div>
+    </div>
+    <div class="titulo">
+      <button class="btn btn-primary" type="submit" routerLink="../inicioVotante">Guardar cambios</button>
+    </div>
+  </form>
+</div>

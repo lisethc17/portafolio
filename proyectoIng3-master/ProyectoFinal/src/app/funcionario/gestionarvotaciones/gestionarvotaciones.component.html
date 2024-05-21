@@ -1,0 +1,20 @@
+<div class="gestionar">
+    <form class="custom-form" method="post">
+      <h1>Gestionar Votaciones</h1>
+      <input
+        type="time"
+        name="horaInicio"
+        [(ngModel)]="horaInicio"
+        placeholder="horaInicio"
+        required="required"
+      />
+      <input
+        type="time"
+        name="horaFinal"
+        [(ngModel)]="horaFinal"
+        placeholder="horaFinal"
+        required="required"
+      />
+      <button type="submit" (click)="registerc()" >Registrar</button>
+    </form>
+  </div>

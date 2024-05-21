@@ -1,0 +1,14 @@
+<div class="login">
+    <form class="custom-form" method="post">
+      <h1>Inicia Sesión</h1>
+      <input
+        type="email"
+        [(ngModel)]="email"
+        name="email"
+        placeholder="Email"
+        required="required"
+      />
+      <button type="submit" (click)="login()">Enviar Contraseña</button>
+  
+    </form>
+  </div>

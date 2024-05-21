@@ -1,0 +1,37 @@
+.modal1{
+    margin-top: 5px;
+}
+
+.modal_body{
+    display: flex;
+    position: absolute;
+    background: #c4c4c4;
+    width: 300px;
+    height: 300px;
+}
+
+.descripcion{
+    background: #c4c4c4;
+    padding: 5%;
+}
+
+.descripcion p{
+    text-align:justify;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.descripcion h1,h3{
+    display: flex;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+button{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+button:hover{
+    background: #D91600;
+}

@@ -1,0 +1,37 @@
+.inicio {
+  border-right: none;
+  border-left: none;
+  padding: 60px;
+  padding-left: 90px;
+  padding-right: 90px;
+  background-image: url("../../../assets/inicioFuncionario6.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: black;
+  height: 100%;
+}
+
+
+.inicio1 {
+  position: absolute;
+}
+
+.botones {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /*padding-top: 1%;
+  padding-bottom: 1%;*/
+}
+
+.primero{
+  margin-top: 10%;
+  color: #fff;
+}
+
+.boton1 {
+  width: 400px;
+  height: 60px;
+  font-family: 'Libre Baskerville', serif;
+}

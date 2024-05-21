@@ -1,0 +1,52 @@
+.perfil{
+    padding: 5%;
+    background: #193f6d;
+    height: 100%;
+}
+
+.titulo{
+    width: 100%;
+    padding-left: 5%;
+}
+
+.custom-form{
+    color: #fff;
+}
+
+.contienePartes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parte{
+    width: 50%;
+    padding-left: 5%;
+}
+
+input{
+    border-radius:1%;
+    margin-top: 3px;
+}
+
+input,label{
+    width: 80%;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1{ 
+    font-family: 'Libre Baskerville', serif;
+    color: #fff;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+}
+
+button{
+    font-family: 'Libre Baskerville', serif;
+}
+
+button:hover{
+    border: solid 2px black;
+}

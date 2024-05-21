@@ -1,0 +1,82 @@
+<div class="total">
+  <div class="register">
+    <div class="custom-form">
+      <form method="post">
+        <h1>Registro de usuarios</h1>
+        <div class="consulta">
+          <input type="text" [(ngModel)]="cedula" name="cedula" placeholder="cedula" required="required" />
+          <button type="submit" (click)="consultar(cedula)">Buscar cedula</button>
+        </div>
+  
+      </form>
+      <div  *ngIf="existe2===false">
+        <label>
+          El usuario No Se Encuentra Registrado
+        </label>
+      </div>
+      <form *ngIf="existe" [formGroup]="usuarioForm">
+        <div>
+          <label>
+            Nombre
+          </label>
+          <input formControlName="nombres" type="text">
+        </div>
+        <div>
+          <label>
+            Apellido
+          </label>
+          <input formControlName="apellidos" type="text">
+        </div>
+        <div>
+          <label>
+            municipio de nacimiento
+          </label>
+          <input formControlName="municipionacimiento" type="text">
+        </div>
+        <div>
+          <label>
+            fecha de nacimiento
+          </label>
+          <input formControlName="fechanacimiento" type="text">
+        </div>
+        <div>
+          <label>
+            pais
+          </label>
+          <input formControlName="pais" type="text">
+        </div>
+        <div>
+          <label>
+            departamento de residencia
+          </label>
+          <input formControlName="departamentoresidencia" type="text">
+        </div>
+        <div>
+          <label>
+            municipio de residencia
+          </label>
+          <input formControlName="municipioresidencia" type="text">
+        </div>
+        <div>
+          <label>
+            lugar de votacion
+          </label>
+          <input formControlName="lugarvotacion" type="text">
+        </div>
+        <div>
+          <label>
+            correo
+          </label>
+          <input formControlName="correo" type="text">
+        </div>
+        <div>
+          <label>
+            telefono
+          </label>
+          <input formControlName="phone" type="text">
+        </div>
+        <button type="submit" [disabled]="usuarioForm.invalid" (click)="register()">Registrar</button>
+      </form>
+    </div>
+  </div>
+</div>
